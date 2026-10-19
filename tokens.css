@@ -1,0 +1,94 @@
+:root {
+    /*Пресеты для карточек */
+    --color-card-green: #09ce4142;
+    --color-card-blue: #1f316f;
+    --color-card-red: #6e1d1d;
+    --color-card-yellow: #8a8b37;
+    --color-card-orange: #9d6711;
+    --color-card-purple: #62236e;
+    --color-card-magenta: #6e234f;
+    --color-card-cyan: #236e68;
+    --color-card-lime: #236e27;
+
+    --color-card-glow-green: #2dbb57;
+    --color-card-glow-blue: #3b53de;
+    --color-card-glow-red: #f03838;
+    --color-card-glow-yellow: #e4f52d;
+    --color-card-glow-orange: #ffc73a;
+    --color-card-glow-purple: #cd28e6;
+    --color-card-glow-magenta: #e63186;
+    --color-card-glow-cyan: #4bead5;
+    --color-card-glow-lime: #44f17b;
+
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-accent: #ea580c;
+    --color-accent-hover: #c2410c;
+    --color-bg-page: #f5f2eb;
+    --color-bg-surface: #ffffff;
+    --color-bg-muted: #eae5d9;
+    --color-border: #dcd4c5;
+    --color-text-main: #292524;
+    --color-text-muted: #78716c;
+    --color-text-inverse: #ffffff;
+    --color-status-success: #166534;
+    --color-status-danger: #991b1b;
+    --color-status-success-bg: #dcfce7;
+    --color-status-danger-bg: #fee2e2;
+    --color-focus-ring: #2563eb;
+    --focus-outline: 3px solid var(--color-focus-ring);
+    --focus-offset: 3px;
+    --space-2xs: 0.25rem; /* 4px */
+    --space-xs: 0.5rem;   /* 8px */
+    --space-sm: 0.75rem;  /* 12px */
+    --space-md: 1rem;     /* 16px */
+    --space-lg: 1.5rem;   /* 24px */
+    --space-xl: 2rem;     /* 32px */
+    --space-2xl: 3rem;    /* 48px */
+    --radius-sm: 0.25rem; /* 4px */
+    --radius-md: 0.5rem;  /* 8px */
+    --radius-lg: 0.75rem; /* 12px */
+    --radius-pill: 9999px;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+    --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-family-headings: "Georgia", serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: clamp(1.75rem, 3vw, 2.25rem);
+    --line-height-tight: 1.25;
+    --line-height-base: 1.5;
+
+    --transition-fast: 150ms ease-in-out;
+    --transition-normal: 250ms ease-in-out;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+        --color-primary: #60a5fa;
+        --color-primary-hover: #93c5fd;
+        --color-accent: #fb923c;
+        --color-accent-hover: #fdba74;
+        --color-bg-page: #0f172a;
+        --color-bg-surface: #1e293b;
+        --color-bg-muted: #334155;
+        --color-border: #475569;
+        --color-text-main: #f8fafc;
+        --color-text-muted: #94a3b8;
+        --color-text-inverse: #0f172a;
+        --color-status-success: #4ade80;
+        --color-status-danger: #f87171;
+        --color-status-success-bg: #05372a;
+        --color-status-danger-bg: #441010;
+        --color-focus-ring: #60a5fa;
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+  }
+}

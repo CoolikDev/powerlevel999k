@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POWER LEVEL 999k ⚡</title>
+    <meta name="theme-color" content="#101011">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="pwa/icon-192.png">
+    <link rel="apple-touch-icon" href="pwa/icon-192.png">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bolts" aria-hidden="true"></canvas>
+    <div class="flash" id="flash"></div>
+
+    <header class="hero">
+        <h1 class="PowerText">POWER LEVEL 999k ⚡</h1>
+        <div class="scouter">
+            <div class="scouter-num"><span id="totalXP">0</span><small>POWER</small></div>
+            <div class="power-bar">
+                <div class="progress-track">
+                    <div class="progress-fill" id="globalFill"></div>
+                    <span class="progress-text" id="globalText">0 / 1000 XP</span>
+                </div>
+                <p class="lvl" id="globalLvl">LVL 0</p>
+            </div>
+        </div>
+        <p class="goal" id="goalText"></p>
+        <div class="toolbar">
+            <button id="btnImport">⬆ IMPORT JSON</button>
+            <button id="btnExport">⬇ EXPORT</button>
+            <button id="btnSound">🔊 SOUND ON</button>
+            <button id="btnInstall" hidden>⬇ INSTALL APP</button>
+            <button id="btnReset" class="danger">⟲ RESET</button>
+        </div>
+    </header>
+
+    <main class="mamyt" id="cards"></main>
+    <p class="empty" id="empty" hidden>No cards yet. Hit <b>IMPORT JSON</b> and paste your roadmap (see DOCS.md).</p>
+
+    <dialog id="importDlg">
+        <h2>Import cards (JSON)</h2>
+        <p>Paste one card object or an array of cards. Same <code>name</code>/<code>id</code> replaces the existing card. You can also paste an exported backup to restore progress.</p>
+        <textarea id="importText" spellcheck="false" placeholder='[{ "name": "Go", "shortDesc": "...", "maxXP": 5000, "color": "cyan", "icon": "go", "parts": ["Install", "Tour of Go"] }]'></textarea>
+        <p class="err" id="importErr"></p>
+        <div class="toolbar">
+            <button id="importOk">ADD</button>
+            <button id="importCancel" class="danger">CANCEL</button>
+        </div>
+    </dialog>
+
+    <script src="icons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
